@@ -14,8 +14,15 @@ const Currency = () => {
 	const divStyle = {
         backgroundColor: '#a5e1a0',
         borderRadius: '4px',
-        border: '10px' ,
+        border: '20px' ,
+        padding: '20px',
+        color: '#ffffff'
     }
+
+    const optionStyle =  {
+        color: '#000000'
+    }
+        
  
 
 
@@ -23,11 +30,11 @@ const Currency = () => {
 		<div>
            
 			<select name="currency" id="currencySelect" onChange={(event) =>changeCurrency(event.target.value)} style={divStyle}>
-              <option valu="" selected disabled hidden>Currency ({currency})</option>
-              <option value="£">£ Pound</option>
-              <option value="$">$ Dollar</option> 
-              <option value="€">€ Euro</option>
-              <option value="₹">₹ Ruppee</option>
+              <option value="" selected disabled hidden style={optionStyle}>Currency ({currency})</option>
+              <option value="£"style={optionStyle}>£ Pound</option>
+              <option value="$"style={optionStyle}>$ Dollar</option> 
+              <option value="€"style={optionStyle}>€ Euro</option>
+              <option value="₹"style={optionStyle}>₹ Rupee</option>
            </select>  
 		</div>
 	);
